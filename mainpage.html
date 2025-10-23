@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ تصميم متجاوب -->
+  <title>Abu-Haidar Car Auction</title>
+  <meta name="description" content="Abu Haidar Car Auction - Best car auction company in Yemen offering great deals and services."> <!-- ✅ وصف مختصر -->
+  <link rel="stylesheet" href="css/mainpage.css">
+  <link rel="icon" href="icon/ABU_30215.ico">
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="img/LogoMakerCa-1666385756766.png" alt="Abu Haidar Logo">
+    <div class="head">
+      <a href="login.html" aria-label="Login or Sign Up">
+        <img src="icon/user-account.png" id="login" alt="User Account Icon">
+      </a>
+      <h1 id="titel">Abu Haidar</h1>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="garage.html">Garage</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    </nav>
+ <section class="search" aria-label="Search cars">
+  <label for="searchbox" class="visually-hidden">Search</label>
+  <input type="text" id="searchbox" placeholder="Search . . .">
+  <img src="icon/4208516.png" id="searchicon" alt="Search icon">
+    </section>
+  </header>
+
+  <main>
+    <section class="slaide_container" aria-label="Car Auction Image Slider">
+      <div id="slide_number" class="slide_number"></div>
+      <img src="slidephoto/morc2.jpg" alt="Car image 1">
+      <img src="slidephoto/toyota2.jpeg" alt="Toyota car">
+      <img src="slidephoto/l2.jpg" alt="Luxury car">
+      <img src="slidephoto/kia2.jpg" alt="Kia car">
+      <img src="slidephoto/land.jpg" alt="Land Cruiser car">
+    </section>
+      
+    <div class="slider_cotrol">
+      <button id="prev" class="prev" aria-label="Previous slide">Previous</button>
+      <span id="indicators" class="indicators"></span>
+      <button id="next" class="next" aria-label="Next slide">Next</button>
+    </div>
+
+  
+
+    <section class="difen" aria-label="About Abu Haidar Auction">
+      <h2><u>Abu-Haidar-Auction <span style="font-family: 'brush-script-std-clara'; color: #9CD2F5;">CAR</span></u></h2>
+      <p id="text">
+        We are the best company in <span style="color: #FC5555; font-size: 25px;"><i>Yemen</i></span>, 
+        choose your happiness with us and don't hesitate...
+      </p>
+      <ul>
+        <li><img src="img/kisspng-nasdaq-cprt-business-copart-pr-newswire-organizati-5b32ca370b74e1.1262185315300552230469.png" alt="Copart partner logo"></li>
+        <li><img src="img/5a28c52a4608b4.9337198515126213542869.png" alt="Company partner logo"></li>
+      </ul>
+    </section>
+
+    <img src="storyset/Car finance-bro.png" id="img3" alt="Car finance illustration">
+  </main>
+
+  <footer>
+    <ul class="social-icon" aria-label="Social Media Links">
+      <li><a href="#" aria-label="YouTube"><img src="img/1491580635-yumminkysocialmedia26_83102.png" alt="YouTube icon"></a></li>
+      <li><a href="#" aria-label="WhatsApp"><img src="img/Whatsapp_37229.png" alt="WhatsApp icon"></a></li>
+      <li><a href="#" aria-label="Facebook"><img src="img/facebook_icon-icons.com_59205.png" alt="Facebook icon"></a></li>
+    </ul>
+
+    <img src="storyset/Cash Payment-bro.png" id="img1" alt="Cash payment illustration">
+    <img src="storyset/Fast car-cuate.png" id="img2" alt="Fast car illustration">
+
+    <p id="copy">2025 &copy; Abu-Haidar-Auction | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/slider.js"></script>
+
+  
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+  });
+</script>
+
+    
+</body>
+</html>
